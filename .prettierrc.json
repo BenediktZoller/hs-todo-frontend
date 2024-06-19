@@ -1,0 +1,6 @@
+{
+  "singleQuote": true,
+  "proseWrap": "always",
+  "singleAttributePerLine": true,
+  "endOfLine": "auto"
+}

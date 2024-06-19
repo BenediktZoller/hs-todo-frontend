@@ -1,0 +1,45 @@
+module.exports = {
+  root: true,
+  env: { browser: true },
+  plugins: ['vue', '@typescript-eslint', 'prettier'],
+  parser: 'vue-eslint-parser',
+  extends: ['plugin:vue/vue3-recommended', 'prettier'],
+  parserOptions: {
+    parser: '@typescript-eslint/parser',
+    project: './tsconfig.json',
+    extraFileExtensions: ['.vue'],
+  },
+  rules: {
+    'prettier/prettier': 'warn',
+    'no-console': 'warn',
+    curly: 'warn',
+    eqeqeq: 'warn',
+    'prefer-const': 'error',
+    'prefer-template': 'warn',
+    'require-await': 'off',
+    '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'always',
+          normal: 'always',
+          component: 'always',
+        },
+        svg: 'always',
+        math: 'always',
+      },
+    ],
+  },
+  ignorePatterns: [
+    'vite.config.ts',
+    'tailwind.config.js',
+    'postcss.config.js',
+    'env.d.ts',
+    'coverage/**',
+    '.eslintrc.cjs',
+  ],
+};
