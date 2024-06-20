@@ -5,7 +5,11 @@ import hsKempten from '../assets/hs-kempten.svg';
 
 const todos = ref<Array<{ text: string; done: boolean }>>([]);
 todos.value.push({ text: 'Learn Vue 3', done: false });
+todos.value.push({ text: 'Forget React', done: false });
+todos.value.push({ text: 'Learn Tailwind', done: false });
+todos.value.push({ text: 'Learn Vitest', done: false });
 todos.value.push({ text: 'Learn Nestjs', done: false });
+todos.value.push({ text: 'Learn Supertest', done: false });
 todos.value.push({ text: 'Learn TypeORM', done: false });
 
 const newTodo = ref<string>('');
