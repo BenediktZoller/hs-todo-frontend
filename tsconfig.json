@@ -8,13 +8,17 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+    "moduleResolution": "bundler",
+    "module": "esnext",
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.vue",
     "tests/**/*.ts",
+    "vite.config.ts",
+    "vitest.setup.ts",
   ],
   "files": [],
   "references": [
