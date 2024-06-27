@@ -2,15 +2,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "strict": true,
-    "paths": {
-      "@/*": ["src/*"]
-    },
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "moduleResolution": "bundler",
-    "module": "esnext",
+    "module": "ESNext",
+    "target": "ESNext"
   },
   "include": [
     "src/**/*.ts",
@@ -18,12 +16,12 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "vite.config.ts",
-    "vitest.setup.ts",
+    "vitest.setup.ts"
   ],
-  "files": [],
+  "files": ["node_modules/vitest/globals.d.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"
-    },
+    }
   ]
 }
